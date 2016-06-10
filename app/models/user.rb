@@ -15,17 +15,42 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
-  # Returns the hash digest of the given string.
+  # SYNTAX _ Multiple ways to define Class Methods.
+  # SYNTAX 1: Returns the hash digest of the given string.
+  # def User.digest(string)
+  #   cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+  #                                                 BCrypt::Engine.cost
+  #   BCrypt::Password.create(string, cost: cost)
+  # end
+
+  # # SYNTAX 1: Returns a random token.
+  # def User.new_token
+  #   SecureRandom.urlsafe_base64
+  # end
+
+  # SYNTAX 2: Returns the hash digest of the given string.
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
 
-  # Returns a random token.
+  # SYNTAX 2: Returns a random token.
   def User.new_token
     SecureRandom.urlsafe_base64
   end
+
+  # # SYNTAX 3: Returns the hash digest of the given string.
+  # def User.digest(string)
+  #   cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+  #                                                 BCrypt::Engine.cost
+  #   BCrypt::Password.create(string, cost: cost)
+  # end
+
+  # # SYNTAX 3: Returns a random token.
+  # def User.new_token
+  #   SecureRandom.urlsafe_base64
+  # end
 
   # Remembers a user in the database for use in persistent sessions.
   def remember
