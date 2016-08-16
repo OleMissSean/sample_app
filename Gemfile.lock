@@ -1,9 +1,9 @@
 GIT
-  remote: https://github.com/twbs/bootstrap-sass.git
-  revision: cd1ac2d59edc57a434284db438ab76f40e4bc9dc
+  remote: git://github.com/thomas-mcdonald/bootstrap-sass.git
+  revision: a1f368b8f50b405143bf65459a3c22c3759d5d33
   branch: next
   specs:
-    bootstrap-sass (3.3.5.1)
+    bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
 
@@ -47,9 +47,8 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (6.0.3)
-    autoprefixer-rails (6.0.3)
+    autoprefixer-rails (6.3.6.2)
       execjs
-      json
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -226,4 +225,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.10.6
+   1.12.5

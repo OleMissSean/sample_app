@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+gem 'bootstrap-sass', :github => 'thomas-mcdonald/bootstrap-sass', :branch => 'next'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
