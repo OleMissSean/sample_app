@@ -23,6 +23,8 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     get login_path
     assert_template 'sessions/new'
     post login_path, session: { email: @user.email, password: "password" }
+    #@user.send_activation_email
+    #@user.activate
     assert is_logged_in?
     assert_redirected_to @user
     follow_redirect!
