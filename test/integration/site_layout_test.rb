@@ -36,8 +36,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", logout_path
     assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contact_path
-    assert_select "a[href=?]", "http://www.railstutorial.org/"
-    assert_select "a[href=?]", "http://rubyonrails.org/"
     assert_select "a[href=?]", "http://news.railstutorial.org/"
     assert_select "a[href=?]", "http://www.michaelhartl.com/"
   end

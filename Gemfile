@@ -26,7 +26,10 @@ gem 'bootstrap-sass', :github => 'thomas-mcdonald/bootstrap-sass', :branch => 'n
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'
 gem 'faker', '1.6.3'
-gem 'will_paginate', '3.1.0'
+gem 'carrierwave',             '0.11.2'
+gem 'mini_magick',             '4.5.1'
+gem 'fog',                     '1.38.0'
+gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 
 # Use Unicorn as the app server

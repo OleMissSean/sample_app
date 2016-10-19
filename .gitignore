@@ -21,3 +21,9 @@
 
 .DS_Store
 app/.DS_Store
+
+# Ignore uploaded test images.
+/public/uploads
+
+# Ignore sensitve S3 information
+/config/initializers/carrier_wave.rb
